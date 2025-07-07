@@ -1,0 +1,10 @@
+create git repo and clone it in local
+create mycode.py file and code to it 
+do a git add-commit-push before initializing dvc
+if first time then pip install dvc
+now we do dvc init(create .dvc gitignore, .dvc)
+now do "mkdir s3" (creates a new s3 directory or file)
+now we do " dvc remote add -d myremote s3 "
+next "dvc add data/  " now you get error they said that this data file already tracked by git ,if you 
+want to tracked by dvc then 1st you remove track by git now you write 1st " git rm -r --cached 'data' " 
+2nd " git commit -m "stop tracking data" then you run "dvc add data/" then " git add .gitignore data.dvc "
