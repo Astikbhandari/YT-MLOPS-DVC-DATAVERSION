@@ -8,3 +8,5 @@ now we do " dvc remote add -d myremote s3 "
 next "dvc add data/  " now you get error they said that this data file already tracked by git ,if you 
 want to tracked by dvc then 1st you remove track by git now you write 1st " git rm -r --cached 'data' " 
 2nd " git commit -m "stop tracking data" then you run "dvc add data/" then " git add .gitignore data.dvc "
+now " dvc commit " and then" dvc  push "
+do a git add-commit-push to mark this stage asfirst version of data
